@@ -7,6 +7,11 @@
   #product1 {
     text-align: center;
   }
+  .pro{
+    /* background-color: rgb(61, 63, 74); */
+    background-color: #390002;
+  }
+ 
   
   #product1 .pro {
     width: 23%;
@@ -18,10 +23,14 @@
     transition: 0.2s ease;
     position: relative;
     margin: 15px 0;
+    transition: width 10s;
+    /* animation-timing-function: ease-in; */
+    transition-timing-function: ease;
   }
   
   #product1 .pro:hover {
-    box-shadow: 20px 20px 30px rgba(0, 128, 0, 0.2);
+    box-shadow: 20px 20px 40px rgba(78, 86, 127, 01);
+    width: 26%;
   }
   
   #product1 .pro img {
@@ -41,7 +50,7 @@
   
   #product1 .pro .description h5 {
     padding-top: 7px;
-    color: #1a1a1a;
+    color: white;
     font-size: 14px;
   }
   
@@ -80,6 +89,49 @@
   }
   
   /* page-header */
+  /* carousal header in product page start */
+
+#carouselSection .carousel-caption {
+  z-index: 2;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  color: #fff5d7;
+  text-align: center;
+}
+
+#carouselSection h2,
+#carouselSection p {
+  font-weight: 700;
+  color: #f1f1f1;
+  text-shadow: 0px 0px 0px rgba(255, 54, 54, 0.2);
+}
+
+.carousel-image {
+  overflow: hidden;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  max-height: 70vh; /* Adjust this value to your desired height */
+  object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+
+.overlay {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(38, 38, 38, 0), rgba(93, 92, 92, 0));
+  /*  Gradient overlay */
+  /* background: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0)
+  ); Lighter gradient overlay */
+  z-index: 1; /* Ensure overlay is above the image */
+}
+/* carousal header in product page end */
   
   /* shopping navigation buttons */
   #page-header {
@@ -255,7 +307,7 @@
   
   #product1 .pro .description h5 {
     padding-top: 7px;
-    color: #1a1a1a;
+    color: white;
     font-size: 14px;
   }
   
@@ -427,5 +479,8 @@
   }
   #prodetails .single-pro-details span {
     line-height: 25px;
+  }
+  footer p{
+    color: white;
   }
   
