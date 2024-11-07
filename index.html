@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="product.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+         <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     </head>
 
     <body>
@@ -31,45 +34,112 @@
       <i class="fa-solid fa-bars" id="bar" ></i>
     </div>
 </section>
-<section id="hero">
+<section id="hero" data-aos="zoom-in" data-aos-duration="1000">
   <h4>Experience the taste of luxury in every sip</h4>
   <h2>Discover the Finest Wines & Liquors</h2>
   <h1>On all products</h1>
   <p>Save more width coupons for up to 70% off!!!</p>
   <button>Shop Now</button>
 </section>
-<section id="feature" class="section-p1">
-    <div class="fe-box">
+
+<!-- feature section starts -->
+
+<!-- <section id="feature" class="section-p1 ">
+   
+    <div class="fe-box hover-shadow-box-animation" data-aos="fade-right">
         <img src="img/features/f1.png" alt="">
         <h6>Free Shipping</h6>
     </div>
-    <div class="fe-box">
+    <div class="fe-box hover-shadow-box-animation" data-aos="fade-right">
         <img src="img/features/f2.png" alt="">
         <h6>Fast delivery</h6>
     </div>
-    <div class="fe-box">
+    <div class="fe-box hover-shadow-box-animation" data-aos="fade-up"
+    data-aos-duration="1000">
         <img src="img/features/f3.png" alt="">
         <h6>Save Money</h6>
     </div>
-    <div class="fe-box">
+    <div class="fe-box hover-shadow-box-animation" data-aos="fade-up"
+    data-aos-duration="1000">
         <img src="img/features/f4.png" alt="">
         <h6>Promotions</h6>
     </div>
-    <div class="fe-box">
+    <div class="fe-box hover-shadow-box-animation" data-aos="fade-left">
         <img src="img/features/f5.png" alt="">
         <h6>Happy sell</h6>
     </div>
-    <div class="fe-box">
+    <div class="fe-box hover-shadow-box-animation" data-aos="fade-left" >
         <img src="img/features/f6.png" alt="">
         <h6>24/7 Support</h6>
     </div>
+
+</section > -->
+
+<section id="feature" class="section-p1 container-fluid">
+   <div class="f-head">
+      <h2>Features</h2>
+      <p>Why we are the best!!</p>
+   </div>
+   <div class="row f-rows" data-aos="fade-right" data-aos-duration="1000">
+       <div class="col-md-4 mb-4" >
+           <div class="fe-box hover-shadow-box-animation" data-aos="flip-left" data-aos-duration="2000">
+               <img src="img/features/f1.png" alt="Free Shipping" class="img-fluid">
+               <h6>Free Shipping</h6>
+           </div>
+       </div>
+       <div class="col-md-4 mb-4">
+           <div class="fe-box hover-shadow-box-animation"  data-aos="flip-left" data-aos-duration="2000">
+               <img src="img/features/f2.png" alt="Fast delivery" class="img-fluid">
+               <h6>Fast delivery</h6>
+           </div>
+       </div>
+       <div class="col-md-4 mb-4">
+           <div class="fe-box hover-shadow-box-animation" data-aos="flip-left" data-aos-duration="2000">
+               <img src="img/features/f3.png" alt="Save Money" class="img-fluid">
+               <h6>Save Money</h6>
+           </div>
+       </div>
+       <div class="col-md-4 mb-4">
+           <div class="fe-box hover-shadow-box-animation" data-aos="flip-right" data-aos-duration="2000">
+               <img src="img/features/f4.png" alt="Promotions" class="img-fluid">
+               <h6>Promotions</h6>
+           </div>
+       </div>
+       <div class="col-md-4 mb-4">
+           <div class="fe-box hover-shadow-box-animation" data-aos="flip-right" data-aos-duration="2000">
+               <img src="img/features/f5.png" alt="Happy sell" class="img-fluid">
+               <h6>Happy sell</h6>
+           </div>
+       </div>
+       <div class="col-md-4 mb-4">
+           <div class="fe-box hover-shadow-box-animation" data-aos="flip-right" data-aos-duration="2000">
+               <img src="img/features/f6.png" alt="24/7 Support" class="img-fluid">
+               <h6>24/7 Support</h6>
+           </div>
+       </div>
+   </div>
 </section>
+
+<!-- feature sections ends -->
+
+<section id="vid" class="product-p0">
+   <h2>Our Creation Process</h2>
+   <p>Checkout our production video</p>
+   <div class="video-container">
+       <video id="productionVideo" class="video" autoplay muted loop>
+           <source src="img/wine_production.mp4" type="video/mp4">
+           Your browser does not support the video tag.
+       </video>
+       <button id="muteButton" class="mute-button">Unmute</button>
+   </div>
+</section>
+
 
 <section id="product1" class="section-p1">
     <h2>New Arrivals</h2>
     <p>Discover Our Finest Spirits & Wines</p>
-  <div class="pro-container">
-     <div class="pro">
+  <div class="pro-container" data-aos="fade-right">
+     <div class="pro hover-shadow-box-animation" >
          <img src="https://ke-thebar-business.agiza.io/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcXNFIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d26fa65c54e89c9818faf5147c93ed5c27c3bd3a/Dimple%2015%20Year.png" alt="">
          
          <div class="description">
@@ -86,7 +156,7 @@
          </div>
           <a href="#"><i class="fal fa-shopping-cart cart "></i></a>
      </div>
-     <div class="pro">
+     <div class="pro hover-shadow-box-animation ">
          <img src="https://ke-thebar-business.agiza.io/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGdFIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8796495b6dbfa53f3c23d0a56c016ef6a70f33a5/Johnnie%20Walker%20Gold%20Reserve.png" alt="">
          
          <div class="description">
@@ -103,7 +173,7 @@
          </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
      </div>
-     <div class="pro">
+     <div class="pro hover-shadow-box-animation">
          <img src="https://ke-thebar-business.agiza.io/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaGtFIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6513378a3c59939695917bef9187715c6deefe97/Johnnie%20Walker%20Green%20lable.png" alt="">
          
          <div class="description">
@@ -120,7 +190,7 @@
          </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
      </div>
-     <div class="pro">
+     <div class="pro hover-shadow-box-animation">
          <img src="https://ke-thebar-business.agiza.io/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBamNFIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--412d21b8706a78d8baeedee0362dbadc15e66d12/John%20Walker%20&%20Sons%20King%20George%20V_.png" alt="">
          
          <div class="description">
@@ -137,7 +207,7 @@
          </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
      </div>
-     <div class="pro">
+     <div class="pro hover-shadow-box-animation">
          <img src="https://ke-thebar-business.agiza.io/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaFVFIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ec54b701138590016a6e6c4262e0221708ffe3df/Johnnie%20Walker%2018.png" alt="">
          
          <div class="description">
@@ -154,7 +224,7 @@
          </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
      </div>
-     <div class="pro">
+     <div class="pro hover-shadow-box-animation">
          <img src="https://ke-thebar-business.agiza.io/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1lFIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4d76bb78791db57b012418880c8cd4281e283671/J&B%20Rare%20Blended%20Scotch%20Whisky.png" alt="">
          
          <div class="description">
@@ -171,7 +241,7 @@
          </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
      </div>
-     <div class="pro">
+     <div class="pro hover-shadow-box-animation">
          <img src="https://ke-thebar-business.agiza.io/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaElFIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f80ca53de8114ee4d3f28c370b91aa92981ce740/J&B%20Urban%20Honey.png" alt="">
          
          <div class="description">
@@ -188,7 +258,7 @@
          </div>
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
      </div>
-     <div class="pro">
+     <div class="pro hover-shadow-box-animation">
          <img src="https://ke-thebar-business.agiza.io/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaE1FIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d262e837ca2745cda1d9343b7eb8b1963b31ad45/John%20Walker%20&%20Sons%20Odyssey.png" alt="">
           
          <div class="description">
@@ -208,7 +278,7 @@
   </div>
  </section>
  <section id="sm_banner"  class="section-p1" > 
-  <div class="banner-box">
+  <div class="banner-box" data-aos="flip-up" data-aos-duration="1000">
    <h4>Crazy Deals</h4>
    <h2>Buy 1 get 1 free</h2>
    <span>The best classic drink is on sale</span>
@@ -226,7 +296,7 @@
    </div>
 </section>
 <footer  class="section-p1" >
-   <div class="col">
+   <div class="colm">
     
     <h4>Contact</h4>
     <p><strong>Adress</strong>:India</p>
@@ -264,6 +334,30 @@
  
  </footer>
         <script src="script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+
+        <script>
+         const video = document.getElementById('productionVideo');
+         const muteButton = document.getElementById('muteButton');
+     
+         muteButton.addEventListener('click', () => {
+             if (video.muted) {
+                 video.muted = false;
+                 muteButton.textContent = 'Mute';
+             } else {
+                 video.muted = true;
+                 muteButton.textContent = 'Unmute';
+             }
+         });
+     </script>
+
+     <!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 
 </html>
