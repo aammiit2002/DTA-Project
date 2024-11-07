@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+   <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,18 +10,25 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="product.css">
-    </head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+         <!-- Include Bootstrap JS and dependencies -->
+         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </head>
 
-    <body>
+    <body style="background-color: #80091B;">
 <section id="header">
     <a href="#"><img src="img/wine_logo-white.png" class="logo" alt=""></a>
     <div>
         <ul id="navbar">
             <li><a  href="index.html">Home</a></li>
             <li><a class="active" href="shop.html">Shop</a></li>
-            <li><a href="blog.html">Testimonials</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="aboutUs.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="signUp.html">Sign Up</a></li>
             <li id="lg-bag"><a href="cart cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
             <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
         </ul>
@@ -31,16 +38,69 @@
       <i class="fa-solid fa-bars" id="bar" ></i>
     </div>
 </section>
-<section id="page-header">
+
+<!-- <section id="page-header">
   <h2>#All you need!</h2>
   <p>Save more width coupons for up to 70% off!!!</p>
+</section> -->
+<!-- page header start -->
+
+<!-- <section id="page-header">
+  <h2>#All you need!</h2>
+  <p>Save more width coupons for up to 70% off!!!</p>
+</section> -->
+<!-- CAROUSEL -->
+<section id="carouselSection">
+   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+       <ol class="carousel-indicators">
+           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+       </ol>
+       <div class="carousel-inner">
+           <div class="carousel-item active">
+               <img src="img/bar-2586194_640.jpg" class="d-block w-100 carousel-image" alt="First slide">
+               <div class="overlay"></div>
+               <div class="carousel-caption d-none d-md-block">
+                   <h2>#All you need!</h2>
+                   <p>Save more with coupons for up to 70% off!!!</p>
+               </div>
+           </div>
+           <div class="carousel-item">
+               <img src="img/hero1.jpg" class="d-block w-100 carousel-image" alt="Second slide">
+               <div class="overlay"></div>
+               <div class="carousel-caption d-none d-md-block">
+                   <h2>#All you need!</h2>
+                   <p>Save more with coupons for up to 70% off!!!</p>
+               </div>
+           </div>
+           <div class="carousel-item">
+               <img src="img/red-wine-3589988_640.jpg" class="d-block w-100 carousel-image" alt="Third slide">
+               <div class="overlay"></div>
+               <div class="carousel-caption d-none d-md-block">
+                   <h2>#All you need!</h2>
+                   <p>Save more with coupons for up to 70% off!!!</p>
+               </div>
+           </div>
+       </div>
+       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="sr-only">Previous</span>
+       </a>
+       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="sr-only">Next</span>
+       </a>
+   </div>
 </section>
+<!-- PRODUCT LISTING -->
+<div class="container">
 <section id="product1" class="section-p1">
    <h2>Exclusive Selection</h2>
    <p>Discover Our Finest Spirits & Wines</p>
  <div class="pro-container">
     <div class="pro">
-        <img src="bottle-images/Johnnie Walker Double Black.png" alt="">
+        <img  src="bottle-images/johnie walker double black creative.jpg" alt="">
         <div class="description">
            <span>Johnnie Walker</span>
            <h5>Johnnie Walker Double Black</h5>
@@ -56,7 +116,7 @@
          <a href="#"><i class="fal fa-shopping-cart cart "></i></a>
     </div>
     <div class="pro">
-        <img src="bottle-images/Johnnie Walker Blue Label.png" alt="">
+        <img src="bottle-images/Johnnie-Walker-Blue-Label-Creative (1).jpg" alt="">
         <div class="description">
            <span>Johnnie Walker</span>
            <h5>Johnnie Walker Blue label</h5>
@@ -72,7 +132,7 @@
          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
     </div>
     <div class="pro">
-        <img src="bottle-images/John Walker Red lable.png" alt="">
+        <img src="bottle-images/johnie walker red label creative (1).jpg" alt="">
         <div class="description">
            <span>Johnnie Walker</span>
            <h5>Johnnie Walker Red Label</h5>
@@ -88,7 +148,7 @@
          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
     </div>
     <div class="pro">
-        <img src="bottle-images/Johnnie Walker Blue Label.png" alt="">
+        <img src="bottle-images/johnie-walker-black-label-creative (1).jpg" alt="">
         <div class="description">
            <span>Johnnie Walker</span>
            <h5>Johnnie Walker Black Label</h5>
@@ -104,7 +164,7 @@
          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
     </div>
     <div class="pro">
-        <img src="bottle-images/Chrome Gin.png" alt="">
+        <img src="bottle-images/chrome-gin-creative.jpg" alt="">
         <div class="description">
            <span>Chrome </span>
            <h5>Chrome Gin</h5>
@@ -120,7 +180,7 @@
          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
     </div>
     <div class="pro">
-        <img src="bottle-images/J&B Rare Blended Scotch Whisky.png" alt="">
+        <img src="bottle-images/J&B-rare-blended-scotch-creative (1).jpg" alt="">
         <div class="description">
            <span>J & B</span>
            <h5>J & B Rare Blended Scotch</h5>
@@ -136,7 +196,7 @@
          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
     </div>
     <div class="pro">
-        <img src="bottle-images/J&B Urban Honey.png" alt="">
+        <img src="bottle-images/J&B-urban-honey-creative (1).jpg" alt="">
         <div class="description">
            <span>J & B </span>
            <h5>J and B urban honey</h5>
@@ -152,7 +212,7 @@
          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
     </div>
     <div class="pro">
-        <img src="bottle-images/John Walker & Sons Odyssey.png" alt="">
+        <img src="bottle-images/johnnie-walker-odyssey-creative (1).jpg" alt="">
         <div class="description">
            <span>Johnnie Walker & Sons</span>
            <h5>Johnnie Walker odyssey</h5>
@@ -179,7 +239,7 @@
    <p>Discover Our Finest Spirits & Wines</p>
  <div class="pro-container">
     <div class="pro" onclick="window.location.href='sproduct.html';">
-        <img src="bottle-images/Johnnie Walker Double Black.png" alt="">
+        <img src="bottle-images/johnie walker double black creative.jpg" alt="">
         <div class="description">
            <span>Johnnie Walker</span>
            <h5>Johnnie Walker Double Black</h5>
@@ -195,7 +255,7 @@
          <a href="#"><i class="fal fa-shopping-cart cart "></i></a>
     </div>
     <div class="pro">
-        <img src="bottle-images/Johnnie Walker Blue Label.png" alt="">
+        <img src="bottle-images/Johnnie-Walker-Blue-Label-Creative (1).jpg" alt="">
         <div class="description">
            <span>Johnnie Walker</span>
            <h5>Johnnie Walker Blue label</h5>
@@ -211,7 +271,7 @@
          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
     </div>
     <div class="pro">
-        <img src="bottle-images/John Walker Red lable.png" alt="">
+        <img src="bottle-images/johnie walker red label creative (1).jpg" alt="">
         <div class="description">
            <span>Johnnie Walker</span>
            <h5>Johnnie Walker Red Label</h5>
@@ -227,7 +287,7 @@
          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
     </div>
     <div class="pro">
-        <img src="bottle-images/Johnnie Walker Blue Label.png" alt="">
+        <img src="bottle-images/johnie-walker-black-label-creative (1).jpg" alt="">
         <div class="description">
            <span>Johnnie Walker</span>
            <h5>Johnnie Walker Black Label</h5>
@@ -243,7 +303,7 @@
          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
     </div>
     <div class="pro">
-        <img src="bottle-images/Chrome Gin.png" alt="">
+        <img src="bottle-images/chrome-gin-creative.jpg" alt="">
         <div class="description">
            <span>Chrome </span>
            <h5>Chrome Gin</h5>
@@ -259,7 +319,7 @@
          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
     </div>
     <div class="pro">
-        <img src="bottle-images/J&B Rare Blended Scotch Whisky.png" alt="">
+        <img src="bottle-images/J&B-rare-blended-scotch-creative (1).jpg" alt="">
         <div class="description">
            <span>J & B</span>
            <h5>J & B Rare Blended Scotch</h5>
@@ -275,7 +335,7 @@
          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
     </div>
     <div class="pro">
-        <img src="bottle-images/J&B Urban Honey.png" alt="">
+        <img src="bottle-images/J&B-urban-honey-creative (1).jpg" alt="">
         <div class="description">
            <span>J & B </span>
            <h5>J and B urban honey</h5>
@@ -291,7 +351,7 @@
          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
     </div>
     <div class="pro">
-        <img src="bottle-images/John Walker & Sons Odyssey.png" alt="">
+        <img src="bottle-images/johnnie-walker-odyssey-creative (1).jpg" alt="">
         <div class="description">
            <span>Johnnie Walker & Sons</span>
            <h5>Johnnie Walker odyssey</h5>
@@ -314,7 +374,7 @@
     <p>Discover Our Finest Spirits & Wines</p> -->
   <div class="pro-container">
      <div class="pro">
-         <img src="bottle-images/Dimple 15 Year.png" alt="">
+         <img src="bottle-images/dimple-15-year-old-creative (1).jpg" alt="">
           <div class="description">
             <span>Dimple</span>
             <h5>Dimple 15 year Old</h5>
@@ -330,7 +390,7 @@
           <a href="#"><i class="fal fa-shopping-cart cart "></i></a>
      </div>
      <div class="pro">
-         <img src="bottle-images/Johnnie Walker Gold Reserve.png" alt="">
+         <img src="bottle-images/johnnie-walker-gold-label-creative (1).png" alt="">
           <div class="description">
             <span>Johnnie Walker</span>
             <h5>Johnnie Walker Gold label</h5>
@@ -346,7 +406,7 @@
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
      </div>
      <div class="pro">
-         <img src="bottle-images/Johnnie Walker Green lable.png" alt="">
+         <img src="bottle-images/Johnnie-Walker-Green-Label-creative (1).jpg" alt="">
           <div class="description">
             <span>Johnnie Walker</span>
             <h5>Johnnie Walker Green Label</h5>
@@ -362,7 +422,7 @@
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
      </div>
      <div class="pro">
-         <img src="bottle-images/John Walker & Sons King George V_.png" alt="">
+         <img src="bottle-images/johnnie-walker-king-george-V-creative (1).jpg" alt="">
           <div class="description">
             <span>Johnnie Walker</span>
              <h5>Johnnie Walker King George V</h5>
@@ -378,7 +438,7 @@
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
      </div>
      <div class="pro">
-         <img src="bottle-images/Johnnie Walker Gold Reserve.png" alt="">
+         <img src="bottle-images/johnnie-walker-18-year-old-creative (1).jpg" alt="">
           <div class="description">
             <span>Johnnie Walker</span>
             <h5>Johnnie Walker 18 Yr Old</h5>
@@ -394,7 +454,7 @@
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
      </div>
      <div class="pro">
-         <img src="bottle-images/J&B Rare Blended Scotch Whisky.png" alt="">
+         <img src="bottle-images/Mc-dowwell-no1-blende-creative (1).jpg" alt="">
           <div class="description">
             <span>Mr Dowwell</span>
             <h5>Mr Dowwell's No 1 Blende</h5>
@@ -410,7 +470,7 @@
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
      </div>
      <div class="pro">
-         <img src="bottle-images/J&B Urban Honey.png" alt="">
+         <img src="bottle-images/J&B-urban-honey-creative (1).jpg" alt="">
           <div class="description">
             <span>J & B </span>
             <h5>J and B urban honey</h5>
@@ -426,7 +486,7 @@
           <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
      </div>
      <div class="pro">
-         <img src="bottle-images/John Walker & Sons Odyssey.png" alt="">
+         <img src="bottle-images/johnnie-walker-odyssey-creative (1).jpg" alt="">
           <div class="description">
             <span>Johnnie Walker & Sons</span>
             <h5>Johnnie Walker odyssey</h5>
@@ -443,12 +503,13 @@
      </div>
   </div>
  </section>
+</div>
  <section id="pagination" class="section-p1">
     <a href="#">1</a>
     <a href="#">2</a>
     <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
  </section>
- <section  class="section-p1" id="newsletter">
+ <section style="background-color: black;" class="section-p1" id="newsletter">
    <div class="newstext">
       <h4>Subscribe to our newsletter</h4>
       <p>Get  emails about <span>Special Offers</span> </p>
