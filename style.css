@@ -56,6 +56,18 @@ p {
 }
 
 .section-p1 {
+  background-color: #cddcdc;
+  background-image: radial-gradient(
+      at 50% 100%,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(0, 0, 0, 0.25) 100%
+    );
+  background-blend-mode: screen, overlay;
   padding: 40px 80px;
 }
 
@@ -77,6 +89,7 @@ button.normal {
 }
 
 body {
+  scroll-behavior: smooth;
   width: 100%;
 }
 
@@ -185,10 +198,13 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.6 ease;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 #hero button:hover {
-  box-shadow: rgba(7, 135, 202, 0.8) 0 0 90px 33px;
+  /* box-shadow: rgba(7, 135, 202, 0.8) 0 0 90px 33px; */
 
   color: white;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
@@ -199,37 +215,56 @@ body {
   box-shadow: none;
 }
 
-/* feature section in index.html*/
+/* feature section in starts*/
+#features {
+  background-color: #cddcdc;
+}
+#feature .f-rows {
+  padding-left: 6rem;
+}
 
+.f-head h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.f-head p {
+  text-align: center;
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 #feature .fe-box {
-  width: 170px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.2px);
+  -webkit-backdrop-filter: blur(6.2px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  width: 80%;
   text-align: center;
   padding: 25px 15px;
-  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-  border: 1px solid #cce7d0;
-  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 10px 0;
 }
 
-#feature {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 #feature .fe-box:hover {
-  box-shadow: 10px 10px 54px rgba(70, 62, 223, 0.2);
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 15px,
+    rgba(0, 0, 0, 0.12) 0px -12px 10px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 10px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #feature .fe-box h6 {
   padding: 9px 8px 6px 8px;
-  color: turquoise;
+  color: teal;
   display: inline-block;
 }
 
 #feature .fe-box img {
-  width: 100%;
+  width: 80%;
   margin-bottom: 10px;
 }
 
@@ -248,6 +283,58 @@ body {
 #feature .fe-box:nth-child(6) h6 {
   color: orange;
 }
+
+/* feature section ends */
+
+/* video section start */
+
+.product-p0 {
+  text-align: center; /* Center the text */
+}
+
+.video-container {
+  position: relative; /* Position relative for button placement */
+  display: inline-block; /* Center the video container */
+}
+
+.video {
+  margin-top: 1em;
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+}
+
+.mute-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#vid h2,
+#vid p {
+  /* color: #222; */
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#vid {
+  background-color: #222;
+  text-align: center;
+  padding: 20px 0;
+}
+#vid video {
+  margin-bottom: 1rem;
+}
+
+/* video section end */
 
 #banner {
   display: flex;
@@ -391,12 +478,13 @@ button.blue:hover {
 }
 
 footer {
-  display: flex;
+  background-color: white !important;
+  display: flex !important;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-footer .col {
+footer .colm {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
