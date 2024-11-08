@@ -56,7 +56,7 @@ p {
 }
 
 .section-p1 {
-  background-color: #cddcdc;
+  /* background-color: #cddcdc;
   background-image: radial-gradient(
       at 50% 100%,
       rgba(255, 255, 255, 0.5) 0%,
@@ -67,7 +67,7 @@ p {
       rgba(255, 255, 255, 0.25) 0%,
       rgba(0, 0, 0, 0.25) 100%
     );
-  background-blend-mode: screen, overlay;
+  background-blend-mode: screen, overlay; */
   padding: 40px 80px;
 }
 
@@ -90,12 +90,13 @@ button.normal {
 
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
   width: 100%;
 }
 
 .logo {
   padding-top: 5px;
-  width: 13vw;
+  width: 12rem;
   height: auto;
 }
 
@@ -114,6 +115,7 @@ body {
 }
 
 #navbar {
+  padding-top: 1rem;
   display: flex;
   align-items: center;
 }
@@ -216,7 +218,7 @@ body {
 }
 
 /* feature section in starts*/
-#features {
+/* #features {
   background-color: #cddcdc;
 }
 #feature .f-rows {
@@ -282,7 +284,89 @@ body {
 }
 #feature .fe-box:nth-child(6) h6 {
   color: orange;
+} */
+
+/* Feature Section Starts */
+#feature {
+  background-image: url("img/pexels-kelly-1179532-2796105.jpg"); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0; /* Add padding to avoid content touching the edges */
 }
+
+#feature .f-rows {
+  padding-left: 6rem;
+}
+
+.f-head h2 {
+  font-size: 2rem;
+  text-align: center;
+  /* color: #222; */
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.f-head p {
+  text-align: center;
+  /* color: #222; */
+  /* color: #696666; */
+  color: gold;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#feature .fe-box {
+  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(6.2px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  width: 70%;
+  text-align: center;
+  padding: 35px 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px 0;
+}
+
+#feature .fe-box:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 15px,
+    rgba(0, 0, 0, 0.12) 0px -12px 10px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 10px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#feature .fe-box h6 {
+  padding: 9px 8px 6px 8px;
+  /* color: teal; */
+  color: black;
+  display: inline-block;
+}
+
+#feature .fe-box img {
+  width: 35%;
+  /* margin-bottom: 10px; */
+}
+
+#feature .fe-box:nth-child(2) h6 {
+  color: pink;
+}
+#feature .fe-box:nth-child(3) h6 {
+  color: lightgreen;
+}
+#feature .fe-box:nth-child(4) h6 {
+  color: lightskyblue;
+}
+#feature .fe-box:nth-child(5) h6 {
+  color: plum;
+}
+#feature .fe-box:nth-child(6) h6 {
+  color: orange;
+}
+
+/* Feature Section Ends */
 
 /* feature section ends */
 
@@ -502,8 +586,9 @@ footer a {
   margin-top: auto;
   text-align: center;
   padding: 10px 0;
-  background-color: #f1f1f1; /* Optional: Adds a background color to the footer */
-  font-size: 14px; /* Optional: Adjust the font size */
+  background-color: #f1f1f1;
+  font-size: 14px;
+  overflow-x: hidden;
 }
 
 /* .notification {

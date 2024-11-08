@@ -1,0 +1,195 @@
+#contact-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url("img/pexels-benhur-emmanuel-83498627-11828428.jpg");
+  padding: 130px 0;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+body {
+  overflow-x: hidden;
+  background-color: gainsboro;
+}
+#contact-header h1 {
+  color: #fff5d7;
+}
+#contact-header p {
+  font-weight: bold;
+  color: #fff5d7;
+}
+.c-info {
+  padding-top: 3em;
+  margin-bottom: 3em;
+  display: flex;
+  text-align: center;
+}
+.c-opt {
+  /* padding: 1rem; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  width: 38%;
+}
+.c-opt:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: 2s all ease;
+  width: 38%;
+}
+.c-opt h2 {
+  padding-top: 1.5rem;
+  color: #fda40b;
+  font-weight: bold;
+}
+.c-info i {
+  width: 1.5em;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+}
+.c-info p {
+  color: white;
+  /* margin-left: 1.5rem; */
+}
+.c-add,
+.c-phone,
+.c-email {
+  margin-right: 2rem;
+  background-color: #071c34;
+}
+
+#newsletter {
+  background-color: black !important;
+}
+
+.c-opt {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  /* padding: 25px 25px; */
+  position: relative;
+  transition: all 0.8s ease;
+  z-index: 9;
+  /* margin-top: 20px; */
+}
+.c-opt::before,
+.c-opt::after {
+  content: "";
+  height: 300%;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 120%;
+  z-index: -9;
+  transition: all 0.8s;
+  opacity: 0;
+  background-color: #fda40b;
+}
+.c-opt::before {
+  top: -27%;
+  left: 100%;
+}
+.c-opt:hover:before {
+  left: -27px;
+  opacity: 1;
+}
+.c-opt::after {
+  right: 100%;
+  bottom: -37px;
+}
+.c-opt:hover:after {
+  right: -27px;
+  opacity: 1;
+}
+.c-opt:hover {
+  color: #071c34;
+}
+.c-opt:h2 {
+  color: #071c34;
+}
+.c-opt:hover h2 {
+  color: #071c34;
+}
+.c-opt:hover h2 {
+  color: #071c34;
+}
+.c-opt:i {
+  color: #071c34;
+}
+.c-opt:hover i {
+  color: #071c34;
+}
+.c-opt:hover i {
+  color: #071c34;
+}
+.c-opt:span {
+  color: #071c34;
+}
+.c-opt:hover span {
+  color: #071c34;
+}
+.c-opt:hover span {
+  color: #071c34;
+}
+
+/* map section starts */
+
+/* .c-maps {
+  background-color: #071c34;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.m {
+  margin-left: 5%;
+  width: 40%;
+}
+.map-txt {
+  align-items: center;
+  text-align: center;
+} */
+
+/* Map Section Starts */
+.c-maps {
+  /* background-color: #0b1a2b; */
+  /* background-color: #222; */
+  background-image: url("/img/pexels-lucianphotography-3566226.jpg");
+  background-size: cover;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.map-txt {
+  color: #ffffff;
+  text-align: center;
+  width: 40%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.map-txt h1,
+.map-txt h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.map-info {
+  width: 50%;
+  padding: 10px;
+  height: 400px;
+}
+
+.map-info iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* map section ends */
