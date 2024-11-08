@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>WineYard - SignUp</title>
+    
+    <style>
+        body{
+            background-image: url(Amrit-images/signUp-bg.jpg) ;
+            background-size: cover;
+        }
+        /* table{
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            height: 400px;
+            border-radius: 10%;
+            border: 1px solid rgb(247, 245, 245);
+            box-shadow: 5px 10px 3px;
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(234, 210, 180);
+            
+        }
+        table:hover{
+            box-shadow: 15px 15px 10px;
+            width: 65%;
+            
+            background-color:bisque ;
+        }
+        
+        form{
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 3px;
+            width: 60%;
+           
+        } */
+        h2{
+            text-shadow: 3px 3px 3px rgb(90, 19, 19);
+            text-align: center;
+        }
+        #top{
+            padding: 5px;
+            background: rgba(0, 0,0, 0.6);
+            margin: 2% 5%;
+            text-align: center;
+        }
+        img{
+            filter: invert(0);
+            height: 1%;
+            width: 30%;
+        }
+        label{
+            color: white;
+            font-weight: bold;
+        }
+        p{
+            color: white;
+        }
+        
+        
+        
+        
+        /* #fName,#lName,#country,#email,#password{
+            width: 70%;
+            height:70%;
+        }
+        input,textarea,select,button{
+            border-radius: 4px;
+        } */
+        
+    </style>
+    
+</head>
+<body>
+    
+    <section id="header">
+        <a href="#"><img src="img/wine_logo-white.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="index.html">Home</a></li>
+                <li><a  href="shop.html">Shop</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="signUp.html">Sign Up</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+          <a href="cart cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          <i class="fa-solid fa-bars" id="bar" ></i>
+        </div>
+    </section>
+    <div id="top"> 
+        <a href=""><img src="Amrit-images/wine_logo.png">  </a>      
+    </div>
+    <div class="container">
+    <h2 id="heading" style="font-family: Lucida Handwriting, Courier New, monospace; color: rgb(172, 167, 167);">Sign Up form</h2>
+    <form id="SignUpForm" class="row g-3">
+        <div class="col-md-6">
+            <label for="fname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="fname" required>
+          </div>
+          <div class="col-md-6">
+            <label for="lname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lname">
+          </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"  required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4" required>
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label required>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip"required>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+            <label class="form-check-label" for="gridCheck">
+                I agree to the terms and conditions of Wine Yard. <a href="https://www.vins-passions.com/en/general-terms-and-conditions-of-sale/">T&C</a>
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign In</button>
+        </div>
+      </form>
+      <p id="redirect-login">Already have an account? <span onclick="myFunction()" id="SignUp" ><b><u>Log In</u></b></span></p>
+
+      <form id="LogInForm" style="display: none;" class="row g-3">
+        <div class="col-md-12">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-12">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+                Remember Me
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Log In</button>
+        </div>
+      </form>
+    </div>
+    <!-- <form action="" method="">
+        <table>
+            <tr>
+                <td>
+                    <lable style="font-family: Lucida Handwriting, Courier New, monospace;" class="input-label" for="fName"> First Name: </lable>
+                </td>
+                <td>
+                    <input placeholder=" First Name" type="text" name="fName" id="fName">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable style="font-family: Lucida Handwriting, Courier New, monospace;" class="input-label" for="lName"> Last Name: </lable>
+                </td>
+                <td>
+                    <input placeholder=" Last Name" type="text" name="lName" id="lName">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable style="font-family: Lucida Handwriting, Courier New, monospace;" class="input-label" for="gender"> Gender: </lable></td>
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="Male">Male</input>
+                    <input type="radio" name="gender" value="Female">Female</input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable style="font-family: Lucida Handwriting, Courier New, monospace;" class="input-label" for="country"> Country: </lable>
+                </td>
+                <td>
+                    <select  name="country" id="country">
+                        <option> Select Country</option>
+                        <option value="India">India</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="font-family: Lucida Handwriting, Courier New, monospace;" class="input-label" for="email">Email: </label>
+                </td>
+                <td><input placeholder=" abc@xyz.com" type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="font-family: Lucida Handwriting, Courier New, monospace;" class="input-label" for="password">Password: </label>
+                </td>
+                <td><input placeholder=" #### " type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="font-family: Lucida Handwriting, Courier New, monospace;" class="input-label" for="address">Address: </label>
+                </td>
+                <td>
+                    <textarea name="address" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+                <td><input type="reset"></td>
+                <td><button type="submit">Submit</button></td>
+            </tr>
+
+        </table>
+    </form> -->
+    <script>
+        function myFunction() {
+          document.getElementById("heading").innerHTML = "Log In";
+          document.getElementById("SignUpForm").style.display="none";
+          document.getElementById("redirect-login").style.display="none";
+          document.getElementById("LogInForm").style.display="block";
+        }
+    </script>
+</body>
+</html>
